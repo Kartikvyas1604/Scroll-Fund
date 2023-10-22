@@ -65,14 +65,14 @@ export const socialLinkComponent = (
             minW={"50%"}
             flex={1}
             fontSize={"md"}
-            bg={"#fefefe90"}
+            bg={"#FF684B"}
             fontWeight={600}
             rounded={"full"}
             _focus={{
-              bg: "gray.200",
+              bg: "gray.100",
             }}
             _hover={{
-              bg: "white",
+              bg: "black",
             }}
           >
             <Icon as={icon} size={"md"} color={"white"} />
@@ -185,7 +185,7 @@ const User = ({ parsedData }: { parsedData: UserAccount }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/Scroll.ico" />
       </Head>
-      <main className="px-4 md:px-0 my-8 mx-auto max-w-[1080px]">
+      <main className="px-4 md:px-0  mx-auto max-w-[1080px]">
         <div className="max-w-7xl pt-5 pb-5 mx-auto">
           <Header heading="User Profile" />
           <Box
@@ -209,7 +209,7 @@ const User = ({ parsedData }: { parsedData: UserAccount }) => {
             <Heading fontSize={"2xl"} fontFamily={"body"} color={"#FF684B"}>
               {name}
             </Heading>
-            <Text fontWeight={600} color={"white"} mb={4}>
+            <Text fontWeight={600} color={"black"} mb={4}>
               @{username}
             </Text>
             <Text
@@ -232,9 +232,9 @@ const User = ({ parsedData }: { parsedData: UserAccount }) => {
             <form>
               <Input
                 mt={5}
-                borderColor={"white"}
+                borderColor={"gray.600"}
                 placeholder={"Write your message"}
-                _hover={{ borderColor: "gray.700" }}
+                _hover={{ borderColor: "#FF684B" }}
                 _focus={{ borderColor: "#FF684B" }}
                 color={"black"}
                 onChange={(e) => setMessage(e.target.value)}
@@ -251,7 +251,7 @@ const User = ({ parsedData }: { parsedData: UserAccount }) => {
                     color={"black"}
                     borderColor={"white"}
                     _focus={{ borderColor: "#FF684B" }}
-                    _hover={{ borderColor: "gray.700" }}
+                    _hover={{ borderColor: "#FF684B" }}
                     onChange={(e) => setAmount(e.target.value)}
                   />
                   <NumberInputStepper>

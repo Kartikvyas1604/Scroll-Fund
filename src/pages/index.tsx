@@ -34,7 +34,7 @@ export default function Home() {
             as={Box}
             textAlign={"center"}
             spacing={{ base: 8, md: 4 }}
-            py={{ base: 20, md: 16 }}
+            py={{ base: 12, md: 16 }}
           >
             <Heading
               fontWeight={600}
@@ -111,7 +111,7 @@ export default function Home() {
             </Stack>
           </Stack>
         </Container>
-        <div className="max-w-7xl pt-5 pb-20 mx-auto">
+        <div className="max-w-7xl pt-5 pb-8 mx-auto">
           <div className="flex flex-col text-center w-full mb-5 md:mb-10">
             <h1 className="text-4xl mb-10 font-bold title-font mb-4 text-[#FF684B] drop-shadow">
               Features

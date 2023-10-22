@@ -60,10 +60,11 @@ export const socialLinkComponent = (
             fontWeight={600}
             rounded={"full"}
             _focus={{
-              bg: "white",
+              background: "black",
+              
             }}
             _hover={{
-              bg: "white",
+              background: "black",
             }}
           >
             <Icon as={icon} size={"md"} color={"white"} />
@@ -183,7 +184,7 @@ const ViewProfile = ({ parsedData }: { parsedData: UserAccount }) => {
 
             {/* {Show social media links of user} */}
 
-            <VStack mt={8} direction={"row"} spacing={4} color={'#FF684B'}>
+            <VStack mt={8} direction={"row"} spacing={4}>
               {socialLinkComponent(`mailto:${email}`, "Email", MdEmail)}
               {socialLinkComponent(linkedinUrl, "LinkedIn", FaLinkedin)}
               {socialLinkComponent(twitterUrl, "Twitter", FaTwitter)}
