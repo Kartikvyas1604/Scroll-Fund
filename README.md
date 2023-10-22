@@ -4,7 +4,7 @@ Clone the repo via CLI:
 
 ```sh
 git clone https://github.com/Kartikvyas1604/Scroll-Fund.git
-cd doj-fund
+cd Scroll-fund
 ```
 
 Install the required packages:
