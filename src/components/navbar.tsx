@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import {AiOutlineMenu} from "react-icons/ai";
 import {ChevronRightIcon} from "@chakra-ui/icons";
 import {useRouter} from "next/router";
@@ -9,11 +9,6 @@ import {Box, Flex, Icon, Popover, PopoverContent, PopoverTrigger, Stack, Text,} 
 
 const Header = () => {
     const [isOpenMenu, setIsOpenMenu] = useState(false);
-    const [isMounted, setIsMounted] = useState(false);
-
-    useEffect(() => {
-        setIsMounted(true);
-    }, []);
 
     const {pathname} = useRouter();
 
